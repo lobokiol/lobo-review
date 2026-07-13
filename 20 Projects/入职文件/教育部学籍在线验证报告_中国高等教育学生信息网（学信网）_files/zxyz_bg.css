@@ -1,0 +1,322 @@
+/* 学籍、学历、学位中英文版 在线验证报告查询结果页面样式 （学信网中英文都用此样式故提到这块，以免学信网中文版样式打包后，在英文版里引用，覆盖英文版样式）
+* wly
+* 20220909
+*/
+@font-face {
+  font-weight: 700;
+  font-family: D-DIN-Bold;
+  font-style: normal;
+  font-display: auto;
+  src: url("https://t3.chei.com.cn/mis/font/DIN-Bold.ttf") format("truetype");
+}
+@media print {
+  .page-break {
+    page-break-after: always;
+  }
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 14px/1.8 "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", Arial, "sans-serif", SimSun;
+}
+.marT8 {
+  margin-top: 8px;
+}
+.zxyz-res {
+  width: 780px;
+  height: 1104px;
+  padding: 60px 92px 56px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: url('https://t4.chei.com.cn/chsi/images/xlcx2022.jpg') center center no-repeat;
+  position: relative;
+}
+.zxyz-res h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 42px;
+  text-align: center;
+  padding: 15px 0 9px;
+}
+.zxyz-res h4 span {
+  font-size: 18px;
+  vertical-align: bottom;
+}
+.zxyz-res .update-time {
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.zxyz-res .zms-tit {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+}
+.zxyz-res .zms-tit .zms-update-time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
+}
+.zxyz-res .report-info-item {
+  display: flex;
+}
+.zxyz-res .report-info-item .label {
+  font-size: 14px;
+  color: #4C4C4C;
+  line-height: 22px;
+  padding: 6px 0;
+  width: 130px;
+  text-align: left;
+}
+.zxyz-res .report-info-item .value {
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+  padding: 6px 0;
+  width: 350px;
+  text-align: left;
+  word-break: break-word;
+}
+.zxyz-res .report-info-item .value.long {
+  flex: 1;
+}
+.zxyz-res .report-info {
+  position: relative;
+  padding-top: 16px;
+}
+.zxyz-res .r-zp-wrap {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 90px;
+  height: 120px;
+}
+.zxyz-res .report-info-zp {
+  max-width: 100%;
+  max-height: 100%;
+}
+.zxyz-res .zxyz-res-bot {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+}
+.zxyz-res .zxyz-res-bot img {
+  height: 26px;
+}
+.zxyz-res .zxyz-res-bottom {
+  position: absolute;
+  bottom: 50px;
+  width: 596px;
+}
+.zxyz-res .zxyz-res-tip {
+  text-align: left;
+}
+.zxyz-res .zxyz-res-tip-title {
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  height: auto;
+  padding: 0;
+}
+.zxyz-res .zxyz-res-tip-content {
+  font-size: 12px;
+  color: #000000;
+  line-height: 20px;
+}
+.zxyz-res .zxyz-res-code {
+  margin-bottom: 24px;
+  padding: 13px 23px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #34B099;
+  display: flex;
+}
+.zxyz-res .zxyz-res-code .left {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.zxyz-res .zxyz-res-code .right {
+  color: #4C4C4C;
+  line-height: 22px;
+  padding-left: 15px;
+}
+.zxyz-res .zxyz-res-code .yzm {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+.zxyz-res .zxyz-res-code .r_top {
+  display: flex;
+  padding: 11px 0 14px;
+}
+.zxyz-res .zxyz-res-code .text {
+  margin-right: 8px;
+  margin-top: 5px;
+  line-height: 14px;
+}
+.zxyz-res .zxyz-res-code .xh {
+  margin-right: 1px;
+  vertical-align: 1px;
+}
+.zxyz-res .fy-page-tips {
+  margin-top: 11px;
+  margin-left: -7px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4C4C4C;
+}
+.zxyz-res .fy-page-tips span {
+  margin-left: 8px;
+}
+.zxyz-res.xj-zxyz-res .report-info-item .label {
+  width: 100px;
+}
+.zxyz-res.xl-zxyz-res .report-info-item .label {
+  padding: 5px 0;
+}
+.zxyz-res.xl-zxyz-res .report-info-item .value {
+  padding: 5px 0;
+}
+.zxyz-res.xl-zxyz-res .fx-tit {
+  margin: 15px 0 7px;
+  width: 58px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  background: #1976e0;
+}
+.zxyz-res.xl-zxyz-res .fx-row .value {
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+.zxyz-res.xl-zxyz-res .fx-row .fx-yxmc {
+  padding: 0 7px 0 14px;
+}
+.zxyz-res.xl-zxyz-res .zxyz-res-code {
+  margin-bottom: 14px;
+}
+.zxyz-res.xl-zxyz-res .zxyz-res-tip-title {
+  margin-bottom: 7px;
+  line-height: 17px;
+}
+.zxyz-res.xl-zxyz-res .zxyz-res-tip-content {
+  line-height: 17px;
+}
+.zxyz-res.zxyz-res-en h4 {
+  font-size: 26px;
+  padding-top: 0;
+  line-height: 29px;
+}
+.zxyz-res.zxyz-res-en .report-info-item .label {
+  width: 210px;
+}
+.zxyz-res.zxyz-res-en .report-info-item .value {
+  width: 254px;
+}
+.zxyz-res.zxyz-res-en .zxyz-res-code {
+  align-items: center;
+}
+.zxyz-res.zxyz-res-en .zxyz-res-code .r_top {
+  padding: 4px 0 8px;
+}
+.zxyz-res.zxyz-res-en .zxyz-res-code .right {
+  line-height: 21px;
+}
+.zxyz-res.zxyz-res-en .fy-page-tips {
+  margin-top: 9px;
+  margin-left: 0;
+}
+.zxyz-res.zxyz-res-en .fy-page-tips span {
+  margin-left: 16px;
+}
+.zxyz-res.zxyz-res-en .zxyz-res-tip-content {
+  width: 98%;
+}
+.zxyz-res.xl-zxyz-res-en .report-info-item .label {
+  padding: 4px 0;
+  line-height: 18px;
+}
+.zxyz-res.xl-zxyz-res-en .report-info-item .value {
+  padding: 4px 0;
+  line-height: 18px;
+}
+.zxyz-res.xl-zxyz-res-en .zxyz-res-bottom {
+  bottom: 48px;
+}
+.zxyz-res.xl-zxyz-res-en .zxyz-res-code {
+  margin-bottom: 8px;
+}
+.zxyz-res.xl-zxyz-res-en .zxyz-res-tip-title {
+  margin-bottom: 6px;
+  line-height: 14px;
+}
+.zxyz-res.xl-zxyz-res-en .fx-tit {
+  margin: 12px 0 8px;
+  width: 42px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  background: #1976e0;
+}
+.zxyz-res.xl-zxyz-res-en .fx-row .value {
+  padding: 0 0 4px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.zxyz-res.xl-zxyz-res-en .fx-row .fx-yxmc {
+  padding: 0 12px;
+}
+.zxyz-res.xl-zxyz-res-en .zxyz-res-tip-content p {
+  text-indent: 0;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+.zxyz-res.sed-page {
+  margin-top: 15px;
+}
+.zxyz-res.wzy-zxyz-res {
+  padding: 120px 92px 79px;
+  background: url('https://t3.chei.com.cn/chsi/images/xlcx_wzy.png') center center no-repeat;
+}
+.zxyz-res.wzy-zxyz-res h4 {
+  padding-bottom: 13px;
+}
+.zxyz-res.wzy-zxyz-res .update-time {
+  margin-bottom: 16px;
+}
+.zxyz-res.wzy-zxyz-res .report-info-item .label,
+.zxyz-res.wzy-zxyz-res .report-info-item .value {
+  padding: 9px 0;
+}
+.zxyz-res.wzy-zxyz-res .zxyz-res-bottom {
+  bottom: 79px;
+}
+.zxyz-res.wzy-zxyz-res .zxyz-res-bot {
+  right: 60px;
+  bottom: 50px;
+}
