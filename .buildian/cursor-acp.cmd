@@ -1,0 +1,1 @@
+@echo off\r\n"C:\\Users\\Admin\\AppData\\Local\\cursor-agent\\versions\\2026.07.09-a3815c0\\node.exe" "C:\\Users\\Admin\\AppData\\Local\\cursor-agent\\versions\\2026.07.09-a3815c0\\index.js" %*\r\n

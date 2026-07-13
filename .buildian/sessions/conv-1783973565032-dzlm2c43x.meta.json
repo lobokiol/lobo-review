@@ -1,0 +1,197 @@
+{
+  "id": "conv-1783973565032-dzlm2c43x",
+  "providerId": "grok",
+  "title": "你是谁",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1783973565037,
+  "updatedAt": 1783975585851,
+  "lastResponseAt": 1783975547693,
+  "sessionId": "019f5d1c-5724-7932-9022-2c6a6702f1f5",
+  "providerState": {
+    "agentVersion": "0.2.99"
+  },
+  "messages": [
+    {
+      "id": "msg-1783973565027-sgylz9f",
+      "role": "user",
+      "content": "",
+      "displayContent": "你是谁",
+      "timestamp": 1783973565027
+    },
+    {
+      "id": "msg-1783973565075-725oi6j",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783973565075,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Internal error\n\n\u001b[2m2026-07-13T20:12:47.422603Z\u001b[0m \u001b[31mERROR\u001b[0m responses API error \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0m402 Payment Required \u001b[3merror_message\u001b[0m\u001b[2m=\u001b[0mGrok Build usage balance exhausted\n\nRequest URL: https://cli-chat-proxy.grok.com/v1/responses \u001b[3mmodel_id\u001b[0m\u001b[2m=\u001b[0mgrok-build\n\u001b[2m2026-07-13T20:12:47.586651Z\u001b[0m \u001b[31mERROR\u001b[0m responses API error \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0m402 Payment Required \u001b[3merror_message\u001b[0m\u001b[2m=\u001b[0mGrok Build usage balance exhausted\n\nRequest URL: https://cli-chat-proxy.grok.com/v1/responses \u001b[3mmodel_id\u001b[0m\u001b[2m=\u001b[0mgrok-4.5\n\u001b[2m2026-07-13T20:12:47.587724Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[3merror\u001b[0m\u001b[2m=\u001b[0mInternal error: {\n  \"message\": \"API error (status 402 Payment Required): Grok Build usage balance exhausted\\n\\nRequest URL: https://cli-chat-proxy.grok.com/v1/responses\",\n  \"http_status\": 402\n}\n\u001b[2m2026-07-13T20:12:47.587754Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[3merror\u001b[0m\u001b[2m=\u001b[0mInternal error: {\n  \"message\": \"API error (status 402 Payment Required): Grok Build usage balance exhausted\\n\\nRequest URL: https://cli-chat-proxy.grok.com/v1/responses\",\n  \"http_status\": 402\n}"
+        }
+      ],
+      "durationSeconds": 2,
+      "durationFlavorWord": "Stirred"
+    },
+    {
+      "id": "msg-1783973709181-0mccly4",
+      "role": "user",
+      "content": "",
+      "displayContent": "？",
+      "timestamp": 1783973709181
+    },
+    {
+      "id": "msg-1783973709184-rhbhxps",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783973709184,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n**Error:** JSON-RPC input closed"
+        }
+      ]
+    },
+    {
+      "id": "msg-1783973724029-t2k8qvx",
+      "role": "user",
+      "content": "",
+      "displayContent": "？",
+      "timestamp": 1783973724029
+    },
+    {
+      "id": "msg-1783973724030-8i5lpxu",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783973724030,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n**Error:** JSON-RPC input closed"
+        }
+      ]
+    },
+    {
+      "id": "msg-1783974517513-knomepr",
+      "role": "user",
+      "content": "",
+      "displayContent": "？",
+      "timestamp": 1783974517513
+    },
+    {
+      "id": "msg-1783974517514-7gr4p9c",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783974517514,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n**Error:** JSON-RPC input closed"
+        }
+      ]
+    },
+    {
+      "id": "msg-1783974601654-00c3zzb",
+      "role": "user",
+      "content": "",
+      "displayContent": "?",
+      "timestamp": 1783974601654
+    },
+    {
+      "id": "msg-1783974601656-u2nlk3w",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783974601656,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Failed to start Grok. Check the CLI path and login state."
+        }
+      ]
+    },
+    {
+      "id": "msg-1783974735558-r66wrkg",
+      "role": "user",
+      "content": "",
+      "displayContent": "12",
+      "timestamp": 1783974735558
+    },
+    {
+      "id": "msg-1783974735559-mdjhusd",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783974735559,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Failed to start Grok. Check the CLI path and login state."
+        }
+      ]
+    },
+    {
+      "id": "msg-1783975502949-3lu767s",
+      "role": "user",
+      "content": "",
+      "displayContent": "?",
+      "timestamp": 1783975502949
+    },
+    {
+      "id": "msg-1783975502951-a0o055z",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783975502951,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Failed to start Grok. Check the CLI path and login state."
+        }
+      ]
+    },
+    {
+      "id": "msg-1783975505504-u3l3al8",
+      "role": "user",
+      "content": "",
+      "displayContent": "?",
+      "timestamp": 1783975505504
+    },
+    {
+      "id": "msg-1783975505506-l0314my",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783975505506,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Failed to start Grok. Check the CLI path and login state."
+        }
+      ]
+    },
+    {
+      "id": "msg-1783975547688-6np0nmj",
+      "role": "user",
+      "content": "",
+      "displayContent": "?",
+      "timestamp": 1783975547688
+    },
+    {
+      "id": "msg-1783975547689-4j2wkgj",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783975547690,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n❌ **Error:** Failed to start Grok. Check the CLI path and login state."
+        }
+      ]
+    }
+  ]
+}

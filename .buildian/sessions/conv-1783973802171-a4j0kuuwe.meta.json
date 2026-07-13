@@ -1,0 +1,52 @@
+{
+  "id": "conv-1783973802171-a4j0kuuwe",
+  "providerId": "grok",
+  "title": "？",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1783973802171,
+  "updatedAt": 1783974335806,
+  "lastResponseAt": 1783974332475,
+  "sessionId": null,
+  "messages": [
+    {
+      "id": "msg-1783973802168-ee261hg",
+      "role": "user",
+      "content": "",
+      "displayContent": "？",
+      "timestamp": 1783973802168
+    },
+    {
+      "id": "msg-1783973802197-i4x2bq5",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783973802197,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n**Error:** JSON-RPC input closed"
+        }
+      ]
+    },
+    {
+      "id": "msg-1783974331619-bedpb7a",
+      "role": "user",
+      "content": "",
+      "displayContent": "？",
+      "timestamp": 1783974331619
+    },
+    {
+      "id": "msg-1783974331621-vboj29c",
+      "role": "assistant",
+      "content": "",
+      "timestamp": 1783974331621,
+      "toolCalls": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "content": "\n\n**Error:** JSON-RPC input closed"
+        }
+      ]
+    }
+  ]
+}

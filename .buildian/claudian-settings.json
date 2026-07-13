@@ -1,0 +1,117 @@
+{
+  "userName": "",
+  "permissionMode": "yolo",
+  "model": "cursor-agent:auto",
+  "thinkingBudget": "off",
+  "effortLevel": "high",
+  "serviceTier": "default",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationModel": "amp",
+  "excludedTags": [],
+  "mediaFolder": "",
+  "systemPrompt": "",
+  "persistentExternalContextPaths": [],
+  "sharedEnvironmentVariables": "",
+  "envSnippets": [],
+  "customContextLimits": {},
+  "customModelAliases": {},
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "requireCommandOrControlEnterToSend": false,
+  "locale": "zh-CN",
+  "providerConfigs": {
+    "amp": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": ""
+    },
+    "cursor-agent": {
+      "cliPath": "",
+      "cliPathsByHost": {
+        "device:b9dbc013-14d9-47b3-a0b6-714fa6297124": "C:\\Users\\Admin\\AppData\\Local\\cursor-agent\\versions\\2026.07.09-a3815c0\\index.js"
+      },
+      "discoveredModels": [
+        {
+          "label": "Auto",
+          "rawId": "default[]"
+        },
+        {
+          "label": "grok-4.5",
+          "rawId": "grok-4.5[effort=high,fast=true]"
+        },
+        {
+          "label": "composer-2.5",
+          "rawId": "composer-2.5[fast=true]"
+        },
+        {
+          "label": "kimi-k2.7-code",
+          "rawId": "kimi-k2.7-code[]"
+        },
+        {
+          "label": "glm-5.2",
+          "rawId": "glm-5.2[reasoning=high]"
+        }
+      ],
+      "enabled": true,
+      "environmentHash": "",
+      "environmentVariables": "HTTP_PROXY=\nHTTPS_PROXY=\nALL_PROXY=\nhttp_proxy=\nhttps_proxy=\nall_proxy=",
+      "modelAliases": {},
+      "preferredEffortByModel": {},
+      "visibleModels": []
+    },
+    "droid": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "discoveredModels": [],
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredEffortByModel": {},
+      "visibleModels": []
+    },
+    "grok": {
+      "cliPath": "",
+      "cliPathsByHost": {
+        "device:b9dbc013-14d9-47b3-a0b6-714fa6297124": "C:\\Users\\Admin\\.grok\\bin\\grok.exe"
+      },
+      "discoveredModels": [],
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredEffortByModel": {},
+      "visibleModels": []
+    }
+  },
+  "settingsProvider": "cursor-agent",
+  "savedProviderModel": {
+    "amp": "amp",
+    "grok": "grok:grok-composer-2.5-fast",
+    "cursor-agent": "cursor-agent:auto"
+  },
+  "savedProviderEffort": {
+    "amp": "medium",
+    "grok": "high",
+    "cursor-agent": "high"
+  },
+  "savedProviderServiceTier": {},
+  "savedProviderThinkingBudget": {},
+  "savedProviderPermissionMode": {
+    "amp": "yolo",
+    "grok": "yolo",
+    "cursor-agent": "yolo"
+  },
+  "lastCustomModel": "",
+  "maxTabs": 3,
+  "tabBarPosition": "input",
+  "enableAutoScroll": true,
+  "deferMathRenderingDuringStreaming": true,
+  "chatViewPlacement": "right-sidebar",
+  "hiddenProviderCommands": {}
+}
