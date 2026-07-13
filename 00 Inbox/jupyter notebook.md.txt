@@ -1,0 +1,4 @@
+D:\BaiduNetdiskDownload\导学模块\jupyter notebook
+
+
+conda install -c https://mirrors.aliyun.com/pypi/simple/ pandas

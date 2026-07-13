@@ -1,0 +1,94 @@
+//@version=5
+strategy("马丁策略改良版", overlay=false, commission_value=0.04, initial_capital=balance, pyramiding=99, currency=currency.USD)
+
+// 计算指标，算法参考MACD
+fastAverage = ta.ema(close, 8) // 快线移动平均值
+slowAverage = ta.ema(close, 49) // 慢线移动平均线
+macd = fastAverage - slowAverage // MACD差值
+fast= inpu.int(300,title = '短周期', step=1 ,tooltip = '短周期')
+slow = inpu.int(600,title = '长周期', step=1 ,tooltip = '长周期')
+macShort = ta.ema(macd,fast)
+macLong = ta.ema(macd,slow)
+
+//基本设置
+martinPerecent = inpu.float(2.5,title = '长周期', step=0.1 ,tooltip = '价格下跌多少触发马丁进场')
+martinPerecent = inpu.float(5,title = '长周期', step=0.1 ,tooltip = '最大的马丁仓位')
+
+buy = input(true, title = '允许做多')
+sell = input(true, title = '允许做空')
+longProfitPercetn = input.float(title = "多单止盈",minval=0.0,step = 0.1, defval=1)*0.01
+shortProfitPercetn = input.float(title = "空单止盈",minval=0.0,step = 0.1, defval=1)*0.01
+
+
+martin = input.float(1.6118, title = "马丁基数", minval=1, step = 0.1)
+firstRate = input.float(10, title="初始下单仓位百分比", step =1)
+leverage = input.float(1, title="kanggan", step =1)
+
+//仓位计算
+
+qty =  balance * firstRate *leverage *0.01 / close
+
+var x = 0.0
+if strategy.opentrades>strategy.opentrades [1]
+    x:= x+1
+else if strategy.opentrades==0
+    x := 0
+
+
+
+/////////计算马丁价格
+
+entryPrice = strategy.opentrades==0? 0: strategy.opentrades.entry_price(0)
+limitLong strategy.position_avg_price * (1 + longProfitPercent)
+
+limitShort = strategy.position_avg_price* (1 shortProfitPercent)
+
+SteplimitLong = entryPrice[0] *(1-martinPercent*x/100)
+
+SteplimitShort = entryPrice[0]*(1+martinPercent*x/100)
+
+/////////多单进场
+
+bool EntryLong =ta.crossover (macdShort, macdLong) and buy and strategy.opentrades==0 and strategy.position_size==0
+bool MartinLong = buy and strategy.opentrades==x and strategy.position size>0 and x <= martinMaxGrade
+bool CancelMaringLong = trategy.position_size==0 and trategy.opentrades==0
+bool TPLong =  trategy.position_size==0 and trategy.opentrades==0
+bool TPLong =  trategy.position_size>0 and trategy.opentrades!=0
+
+switch
+    EntryLong => strategy.entry('多单进场',strategy.long, qty = qty)
+    MartingLong => strategy.entry('m马丁',strategy.long, qty = qty*math.pow(marting,x), limit = SteplimitLong,comment = str.tostring(x))
+    CancelMaringLong => strategy.cancel('马丁')
+switch
+    TPShort => strategy.exit("空单平仓",qty_percent = 100 , limit = limitShort )
+
+///绘图
+InTradeLong = strategy.position_size<0
+InTradeShort = strategy.position_size>0
+PickInLong = strategy.opentrades.entry_price(0)*(1-martinPercent*x/100)
+PickInShort = strategy.opentrades.entry_price(0)*(1+martinPercent*x/100)
+
+// plot(InTradeLong? na : limitLong, co)
+
+
+
+
+    
+
+
+// 买入信号
+
+if (diff > dea and diff[1] < dea[1])
+    strategy.entry(long, strategy.long_stop=low + 0.001 * atr(true, 14), strategy.entry_price=close)
+
+// 卖出信号
+if (diff < dea and diff[1] > dea[1])
+    strategy.entry(short, strategy.short_stop=high - 0.001 * atr(true, 14), strategy.entry_price=close)
+
+// 加仓条件
+if (strategy.position_size > 0 and diff > dea)
+    strategy.entry(long, strategy.long_stop=low + 0.001 * atr(true, 14), strategy.entry_price=close)
+
+// 减仓条件
+if (strategy.position_size < 0 and diff < dea)
+    strategy.entry(short, strategy.short_stop=high - 0.001 * atr(true, 14), strategy.entry_price=close)

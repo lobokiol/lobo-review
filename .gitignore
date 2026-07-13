@@ -1,0 +1,23 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache
+.trash/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / local
+.env
+*.pem
+*.key
+
+# Large / binary dumps (keep md knowledge, skip huge zips if any)
+*.zip
+*.7z
+node_modules/
+.idea/
+__pycache__/
