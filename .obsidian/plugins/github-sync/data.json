@@ -1,7 +1,7 @@
 {
   "remoteURL": "https://github.com/lobokiol/lobo-review",
   "gitLocation": "",
-  "syncinterval": 0,
+  "syncinterval": 10,
   "isSyncOnLoad": false,
   "checkStatusOnLoad": true,
   "noticeLevel": "ALL",
