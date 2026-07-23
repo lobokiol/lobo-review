@@ -21,3 +21,6 @@ desktop.ini
 node_modules/
 .idea/
 __pycache__/
+
+# Local interview materials synced from the medical-agent workspace.
+💼 工作专项/面试/面试复盘/
