@@ -293,7 +293,7 @@ AI 应用工程师，长期关注人工智能、Agent、软件工程、职场、
 
 {{TONE_LEVEL}} 可填写：
 克制、直接、犀利、强硬。
-
+1. **Calm but sharp**（冷静但敏锐） 2. **Direct and opinionated**（直接且有主见） 3. **Insightful, not aggressive**（富有洞察力，不带攻击性） 4. **Challenge assumptions without attacking people**（挑战假设，但不攻击个人） 5. **Add a new perspective, not just agreement**（提供新视角，而非单纯附和）
 默认使用“犀利”。
 
 十四、最终输出要求
