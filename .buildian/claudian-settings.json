@@ -49,6 +49,10 @@
           "rawId": "composer-2.5[fast=true]"
         },
         {
+          "label": "kimi-k3",
+          "rawId": "kimi-k3[reasoning=max]"
+        },
+        {
           "label": "kimi-k2.7-code",
           "rawId": "kimi-k2.7-code[]"
         },
