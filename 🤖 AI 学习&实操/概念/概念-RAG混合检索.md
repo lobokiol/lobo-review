@@ -16,7 +16,7 @@
 
 - [[面试复盘]]（1STEP.AI / 零食有鸣 / RAG 专题段）
 - [[面试讲解稿]]（OpenSearch BM25 + kNN）
-- [[100个面试问题]]（RAG 优化章节）
+- [[💼 工作专项/面试/小说转短剧AI平台/100个面试题-rag]]（RAG 优化章节）
 - [[简历]]（Hybrid RAG / Harness）
 - [[TodoList导诊]]（hybrid pipeline 缺口）
 
